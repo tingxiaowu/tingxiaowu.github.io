@@ -1,5 +1,15 @@
 # Tingxiao Wu — Academic Homepage
 
-Source for [tingxiaowu.github.io](https://tingxiaowu.github.io), an academic homepage for HCI PhD applications.
+Academic homepage for HCI PhD applications, hosted at [tingxiaowu.github.io](https://tingxiaowu.github.io).
 
-The website is statically generated with Next.js and deployed through GitHub Pages.
+The visual system is adapted from the open-source [PRISM](https://github.com/xyjoey/PRISM) academic homepage project. This repository keeps a directly deployable static version for GitHub Pages.
+
+## Editing content
+
+- Homepage: `index.html`
+- Research list: `research/index.html`
+- CV summary: `cv/index.html`
+- Shared visual style: `assets/site.css`
+- Theme switcher: `assets/site.js`
+
+GitHub Pages publishes from the `main` branch and `/(root)` directory.

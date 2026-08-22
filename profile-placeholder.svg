@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-labelledby="title desc">
-  <title id="title">Tingxiao Wu portrait placeholder</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder for Tingxiao Wu</title>
   <desc id="desc">A minimal monogram placeholder to be replaced with a portrait.</desc>
-  <rect width="800" height="900" fill="#eef2f1"/>
-  <circle cx="400" cy="365" r="165" fill="#cbd5d1"/>
-  <path d="M145 900c15-230 112-350 255-350s240 120 255 350" fill="#b8c5c0"/>
-  <circle cx="650" cy="120" r="66" fill="#d4a562" opacity=".9"/>
-  <text x="400" y="835" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" letter-spacing="8" fill="#52605b">TW</text>
+  <rect width="500" height="500" fill="#e9efec"/>
+  <circle cx="250" cy="250" r="142" fill="#d4dfda"/>
+  <text x="250" y="276" text-anchor="middle" font-family="Georgia, serif" font-size="106" font-weight="700" fill="#326b5e">TW</text>
+  <text x="250" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="3" fill="#66706b">PORTRAIT PLACEHOLDER</text>
 </svg>
