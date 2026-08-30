@@ -229,9 +229,10 @@ a { color: inherit; }
 .image-slot { min-height: 150px; border: 1px dashed var(--line); border-radius: 11px; background: var(--surface-soft); display: grid; place-items: center; padding: 15px; text-align: center; color: var(--muted); font-size: .82rem; }
 .notice { border-left: 3px solid var(--warm); padding: 9px 0 9px 16px; color: var(--muted); }
 .honor-list { border-top: 1px solid var(--line); }
-.honor-row { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(180px, .75fr); gap: 20px; padding: 9px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
-.honor-row span:first-child { color: var(--text); font-weight: 700; }
-.honor-row span:last-child { color: var(--muted); text-align: right; font-size: .88rem; }
+.honor-row { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(180px, .7fr); gap: 18px; padding: 6px 0; border-bottom: 1px solid var(--line); align-items: baseline; font-size: .84rem; line-height: 1.35; }
+.honor-row span:first-child { color: var(--text); font-weight: 400; }
+.honor-row span:last-child { color: var(--muted); text-align: right; font-size: .8rem; }
+.title-translation { color: var(--muted); font-size: .62em; font-weight: 500; }
 .poster-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; margin-top: 30px; }
 .poster-grid .media-figure { margin: 0; }
 .poster-image { border: 1px solid var(--line); border-radius: 12px; }
