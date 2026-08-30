@@ -151,6 +151,7 @@ a { color: inherit; }
   width: 78px; height: 78px; border-radius: 11px; background: var(--accent-soft); color: var(--accent);
   display: grid; place-items: center; font: 800 .8rem/1.15 Georgia, serif; text-align: center; letter-spacing: .04em;
 }
+.pub-thumb { width: 78px; height: 78px; border-radius: 11px; object-fit: cover; display: block; background: var(--surface-soft); }
 .pub-title { margin: 0 0 3px; font: 700 1.03rem/1.4 Georgia, "Times New Roman", serif; }
 .pub-meta { margin: 0 0 6px; color: var(--accent); font-size: .85rem; font-weight: 700; }
 .pub-desc { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
@@ -195,6 +196,12 @@ a { color: inherit; }
 .detail p, .detail li { color: var(--muted); }
 .placeholder { margin: 28px 0; min-height: 290px; display: grid; place-items: center; border: 1px dashed color-mix(in srgb, var(--muted) 50%, transparent); border-radius: 14px; background: var(--surface-soft); color: var(--muted); text-align: center; padding: 25px; }
 .placeholder strong { display: block; color: var(--text); margin-bottom: 5px; }
+.media-figure { margin: 28px 0; }
+.media-frame { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-soft); }
+.project-hero { width: 100%; height: auto; display: block; }
+.media-credit { position: absolute; right: 10px; bottom: 9px; padding: 3px 7px; border-radius: 6px; color: rgba(255,255,255,.92); background: rgba(0,0,0,.56); font-size: .64rem; line-height: 1.25; }
+.project-video { width: 100%; display: block; border: 1px solid var(--line); border-radius: 14px; background: #000; aspect-ratio: 16 / 9; }
+.media-figure figcaption { margin-top: 8px; color: var(--muted); font-size: .8rem; line-height: 1.5; }
 .contribution-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .contribution-list li { display: grid; grid-template-columns: 34px 1fr; gap: 10px; padding: 13px 0; border-bottom: 1px solid var(--line); }
 .contribution-list span { color: var(--accent); font-size: .8rem; font-weight: 800; }
@@ -223,7 +230,7 @@ a { color: inherit; }
   .navlinks a, .theme-toggle { padding: 7px; font-size: .8rem; }
   .news-row { grid-template-columns: 1fr; gap: 2px; }
   .pub-card { grid-template-columns: 1fr; }
-  .pub-mark { width: 62px; height: 62px; }
+  .pub-mark, .pub-thumb { width: 62px; height: 62px; }
   .timeline-row { grid-template-columns: 54px minmax(0, 1fr); }
   .timeline-date { grid-column: 2; text-align: left; }
   .detail-meta-grid, .visual-grid { grid-template-columns: 1fr; }
