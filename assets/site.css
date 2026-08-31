@@ -179,6 +179,8 @@ a { color: inherit; text-decoration-color: var(--text); }
 .timeline-row h3 { margin: 0; font-size: 1rem; line-height: 1.4; }
 .timeline-row p { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
 .timeline-date { color: var(--muted); font-size: .82rem; text-align: right; }
+.timeline .text-link { text-decoration: none; }
+.timeline .text-link:hover { color: var(--accent); }
 
 .research-hero { padding: 58px 0 26px; max-width: 780px; }
 .research-hero .page-title { font-size: clamp(2.2rem, 5vw, 3.8rem); margin-bottom: 14px; }
