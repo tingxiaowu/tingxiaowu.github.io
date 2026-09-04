@@ -14,6 +14,18 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    const navlinks = document.querySelector('.navlinks');
+    if (navlinks && !navlinks.querySelector('a[href="/projects/"]')) {
+      const projectsLink = document.createElement('a');
+      projectsLink.href = '/projects/';
+      projectsLink.textContent = 'Projects';
+      if (window.location.pathname.startsWith('/projects/')) {
+        projectsLink.setAttribute('aria-current', 'page');
+      }
+      const cvLink = navlinks.querySelector('a[href="/CV_Wu_Tingxiao.pdf"], a[href="/cv/"]');
+      navlinks.insertBefore(projectsLink, cvLink || navlinks.querySelector('.theme-toggle'));
+    }
+
     updateButton();
     const button = document.querySelector('.theme-toggle');
     if (button) button.addEventListener('click', function () {
