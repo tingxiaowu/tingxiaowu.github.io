@@ -8,6 +8,8 @@ The visual system is adapted from the open-source [PRISM](https://github.com/xyj
 
 - Homepage: `index.html`
 - Research list: `research/index.html`
+- Projects / portfolio: `projects/index.html`
+- Project detail pages: `projects/*/index.html` (DualShade and Dongpu retain their existing URLs under `research/`)
 - CV summary: `cv/index.html`
 - Shared visual style: `assets/site.css`
 - Theme switcher: `assets/site.js`
@@ -23,6 +25,10 @@ Place approved public images in `assets/images/` and use stable, descriptive nam
 - `assets/images/vacuum-shape-changing/hero.webp`
 - `assets/images/dualshade/hero.webp`
 - `assets/images/architone/hero.webp`
+- `assets/images/empathy-pulse/hero.webp`
+- `assets/images/emotion-transparent-realm/hero.webp`
+- `assets/images/beautwilight/hero.webp`
+- `assets/images/aetherus/hero.webp`
 
 Use WebP/JPEG for photographs and PNG only when transparency or crisp diagram text is necessary. Under-review materials should only be uploaded after collaborator and IP/public-release approval.
 
