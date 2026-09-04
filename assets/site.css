@@ -175,6 +175,8 @@ a { color: inherit; text-decoration-color: var(--text); }
 .logo-badge.logo-zju img { transform: scale(1.7); }
 .logo-badge.logo-next { padding: 0; }
 .logo-badge.logo-next img { transform: scale(1.8); }
+.logo-badge.logo-imr { padding: 0; }
+.logo-badge.logo-imr img { transform: scale(1.8); }
 .timeline-row.no-logo { grid-template-columns: minmax(0, 1fr) 104px; }
 .timeline-row h3 { margin: 0; font-size: 1rem; line-height: 1.4; }
 .timeline-row p { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
