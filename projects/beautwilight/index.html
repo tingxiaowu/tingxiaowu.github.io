@@ -30,10 +30,10 @@
       <h2>MAKING ROOM FOR PERSONAL WISHES</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The starting point was a tension between personal wishes and physical access. A meaningful experience might be a journey, a familiar place, or simply time with family, yet illness can make these experiences harder to arrange. Beautwilight explores a virtual setting that can be adapted to the person rather than asking everyone to enter the same world.</p>
-          <p><strong>The design question was how to connect a person's wishes, shared activities, and memories in one coherent experience.</strong></p>
+          <p>A wish might be to revisit a familiar city, take part in a religious tradition, or spend time with family. Beautwilight began with the question of how to make room for these personal experiences when travel and shared activities are difficult to arrange.</p>
+          <p><strong>I explored a VR experience that connects choosing a meaningful place, sharing an activity, and preserving a memory.</strong> The design considers three participants in that journey: the person receiving care, their family, and the staff who help them use the system.</p>
         </div>
-        <!-- Add one full-width immersive environment or a restrained montage of four environments; do not use a research-heavy slide. -->
+        <!-- PDF pp. 4–6: use one immersive scene from Creative Mode or Family, with a short caption identifying it as a proposed experience. -->
         <div class="portfolio-media-placeholder portfolio-video-placeholder" role="img" aria-label="Beautwilight immersive environment forthcoming">
           <span>Immersive environment forthcoming</span>
         </div>
@@ -41,13 +41,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>FROM NEEDS TO DESIGN DECISIONS</h2>
+      <h2>LISTENING TO HOSPICE STAFF</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The concept is organized around three priorities: <strong>personalization</strong>, <strong>family connection</strong>, and <strong>low-burden operation</strong>. Personalization motivates configurable environments; connection motivates shared spaces and a story archive; low-burden operation motivates a small set of recognizable entry points.</p>
-          <p>This makes the interface a way to choose an experience, not a long sequence of tasks to complete. The four modules offer different ways to participate depending on the person's interests and energy.</p>
+          <p>I interviewed staff across <strong>six hospice-care institutions</strong> about using VR to support patients' personal wishes. Their concerns were practical: limited room and budgets, equipment maintenance, unfamiliar controls, and discomfort during use. They also emphasized family relationships and culturally meaningful activities.</p>
+          <p>These conversations shaped the design priorities. A small set of entry points addresses ease of operation; configurable environments respond to different interests and traditions; shared spaces and a story archive keep family connection central. Portability, cost, and comfort remain requirements for developing the concept into equipment suitable for care settings.</p>
         </div>
-        <!-- Redraw only the final three insights and the resulting design principles; avoid persona and questionnaire screenshots. -->
+        <!-- PDF p. 2 right column + p. 4 stakeholder synthesis: redraw three interview themes with their design responses. Do not reproduce the full statistics page or imply all requirements were validated. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Research synthesis diagram forthcoming">
           <span>Research synthesis forthcoming</span>
         </div>
@@ -58,10 +58,10 @@
       <h2>FOUR WAYS TO PARTICIPATE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p><strong>Explore</strong> proposes visits to existing environments and the creation of a personalized world from a text prompt. <strong>Healing</strong>, the module's original name, brings together calm environments and reflective activities; it is not a claim of therapeutic effectiveness.</p>
-          <p><strong>Play</strong> proposes lightweight games and movement-oriented experiences. <strong>Family</strong> connects shared virtual activities with a memory archive organized around places, dates, images, and stories. Together, the modules link experiencing something now with preserving something for later.</p>
+          <p><strong>Explore</strong> brings together panoramic visits and a creative mode for describing a personal environment. <strong>Healing</strong> groups religious settings, meditation, nature, and music into a space for reflection.</p>
+          <p><strong>Play</strong> offers games and movement-oriented activities. <strong>Family</strong> proposes a shared virtual home for conversation and activities, alongside a Life Story archive organized by time, place, and personal description. These modules let the user choose a kind of experience before navigating its individual controls.</p>
         </div>
-        <!-- Use four large interface crops—Explore, Healing, Play, and Family—as one clean 2×2 composition. -->
+        <!-- PDF pp. 5–6: four readable crops—Explore, Healing, Play, Family—in a 2×2 composition. Keep Life Story visible within the Family crop. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Beautwilight experience modules forthcoming">
           <span>Experience modules forthcoming</span>
         </div>
@@ -69,13 +69,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>PROTOTYPING THE JOURNEY</h2>
+      <h2>FROM A TEXT PROMPT TO A VIRTUAL PLACE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>I developed a high-fidelity interface concept and a usage scenario to communicate how these parts fit together. The proposed journey moves from choosing or describing a place, to entering an environment, participating in an activity, and revisiting saved memories.</p>
-          <p>The video presents the intended experience. It should be read as a concept walkthrough, not as evidence that scene generation, multi-user participation, and a cloud story library have all been deployed as a complete service.</p>
+          <p>For personalized environments, I explored a workflow connecting <strong>Skybox AI and Unity</strong>. The code sends a text prompt to the Skybox API, receives a generated image URL, downloads the image, and applies it as a texture to a Unity Skybox material.</p>
+          <p>This gives the creative mode a concrete technical starting point: a description can become the panoramic background of a scene. The interface prototype then shows how a user would enter that environment and move between activities. Interactive objects, shared sessions, and the cloud story archive belong to the broader service concept.</p>
         </div>
-        <!-- Pair a text prompt and its generated environment with 2–3 frames from the end-to-end interaction flow. -->
+        <!-- PDF p. 5 lower-right Skybox AI panel: pair one prompt with its generated panorama and a Unity view. Redraw Prompt → Image URL → Texture → Unity Skybox; omit the unrelated medical-chatbot panel. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Beautwilight prototype flow forthcoming">
           <span>Prototype flow forthcoming</span>
         </div>
@@ -83,13 +83,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>WHAT THE CONCEPT ESTABLISHES</h2>
+      <h2>BRINGING THE EXPERIENCE TOGETHER</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The outcome is a service and interface concept connecting personal wishes, immersive experiences, and family memory-making. Its contribution is the organization of that journey; clinical benefit and suitability for hospice use have not been established.</p>
-          <p>The next design questions concern who chooses and shares a memory, how someone can pause or leave an experience, and what level of interaction remains comfortable. These decisions would need to be developed with patients, family members, and hospice professionals.</p>
+          <p>As an individual project, Beautwilight brings together stakeholder research, the service structure, interface design, and a scene-generation exploration. The walkthrough follows the experience from selecting preferences to exploring places and sharing personal stories.</p>
+          <p>The next step would be to test a shorter journey with patients, family members, and hospice staff: choose a place, spend time there, and leave comfortably. The current work establishes a design concept and prototype workflow; it does not establish therapeutic benefit.</p>
         </div>
-        <!-- Add one quiet closing image of a shared or reflective scene, with no UI annotations. -->
+        <!-- PDF p. 6 Family / Life Story: use a clean shared-scene crop paired with one saved-memory screen. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Beautwilight closing scene forthcoming">
           <span>Closing scene forthcoming</span>
         </div>

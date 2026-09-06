@@ -25,10 +25,10 @@
       <h2>TWO WAYS OF READING A PLACE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>People use many cultural frameworks to interpret the relationship between themselves and a place. Feng Shui and local-space astrology come from different histories, symbols, and assumptions, yet both connect spatial direction with personal meaning.</p>
-          <p><strong>The project explores how one object could make these differences visible and invite comparison rather than collapsing them into a single answer.</strong></p>
+          <p>The project began with two ways of interpreting a place: Feng Shui and local-space astrology. Our research compared their concepts, tools, and spatial applications, and included interviews with a Taoist practitioner and a practitioner of environmental psychology and astrology.</p>
+          <p>The design problem was that the two frameworks can offer different advice about the same setting, while their specialist language is difficult for a newcomer to navigate. <strong>We explored a portable object that lets the user choose a perspective and inspect its suggestions in context.</strong></p>
         </div>
-        <!-- Add the three-quarter product render showing the circular display and adjustment ring. -->
+        <!-- PDF pp. 24–25: use the three-quarter product render with the circular display and adjustment ring visible. Caption it as a concept rendering. -->
         <div class="portfolio-media-placeholder portfolio-portrait-placeholder" role="img" aria-label="Aetherus product render forthcoming">
           <span>Product render forthcoming</span>
         </div>
@@ -36,13 +36,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>ONE OBJECT, THREE PERSPECTIVES</h2>
+      <h2>MAKING THE CHANGE OF PERSPECTIVE TANGIBLE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The proposed flow begins with personal context and an image of a room or site. The interface then presents a Feng Shui interpretation, an astrology interpretation, or a combined view. Keeping the modes visible makes the selected perspective an explicit part of the interaction.</p>
-          <p>When it is not being used for spatial exploration, the object becomes an ambient display inspired by traditional talisman forms.</p>
+          <p>The <strong>rotating ring</strong> is the main mode selector, switching between Feng Shui, astrology, and a combined mode. Illuminated symbols indicate which interpretation is active, making the selected framework visible on the object itself.</p>
+          <p>The circular gesture draws on the ritual and cyclical imagery explored in the research. Soft curves and a rounded pentagonal body extend that symbolic language into the form. When idle, the screen displays a pattern inspired by traditional Chinese talismans, allowing the object to remain part of the room.</p>
         </div>
-        <!-- Show the three interface modes as equal panels: Feng Shui, astrology, and combined comparison. -->
+        <!-- PDF p. 24 Product Design: pair the adjustment-ring gesture and illuminated mode symbols with the exploded view. A small idle-screen crop can show the talisman pattern. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus interface modes forthcoming">
           <span>Three interface modes forthcoming</span>
         </div>
@@ -50,13 +50,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>TURN, COMPARE, AND PREVIEW</h2>
+      <h2>FROM A SUGGESTION TO A SPATIAL PREVIEW</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The adjustment ring is the main mode selector. In the interaction concept, turning it changes the interpretation and visual language on the screen. Users can inspect a recommendation and activate an Adjust control to preview a proposed spatial change.</p>
-          <p>The design pairs a physical gesture for changing perspective with screen controls for inspecting its consequences. This lets the same captured place anchor the comparison, rather than requiring the user to restart the task in each mode.</p>
+          <p>The interface journey starts with personal information and a view of a room or site. Suggestions appear over that view; red outlines locate the areas they refer to, while smaller details receive an additional visual marker.</p>
+          <p>An <strong>Adjust</strong> switch replaces the suggestion banner with a proposed visualization of the change. Switching it off returns to the original view. The interaction concept lets the user move between an explanation and its spatial consequence, then change modes to explore another interpretation.</p>
         </div>
-        <!-- Pair the ring-turning gesture with the corresponding on-screen transitions; include the exploded view beneath it. -->
+        <!-- PDF p. 24 Interfaces: three large crops—suggestion with red outline, Adjust enabled, original view restored. Caption these as interface-prototype states. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus tangible interaction sequence forthcoming">
           <span>Tangible interaction forthcoming</span>
         </div>
@@ -64,13 +64,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>SEPARATING THE CONCEPT FROM THE PROTOTYPE</h2>
+      <h2>PROTOTYPING CAPTURE AND INTERPRETATION</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The proof of concept connects an <strong>ESP32-CAM</strong> to a cloud-based multimodal model. A captured image is encoded and sent for text-based interpretation, while a separate interface prototype demonstrates mode switching and the presentation of recommendations.</p>
-          <p>The product rendering communicates the intended form; the interface prototype communicates the user flow; the camera-to-cloud experiment explores technical feasibility. These are distinct pieces of evidence, not a claim that every proposed function is integrated into a finished device.</p>
+          <p>The technical exploration uses an <strong>ESP32-CAM with an OV2640 camera</strong>. The captured image is encoded as Base64 and sent to a <strong>Tongyi Qwen VL</strong> model for image analysis; a subsequent chatbot request produces a Feng Shui interpretation.</p>
+          <p>A separate desktop sketch uses pointer angle and click events to simulate switching between interface images. Together, the camera-to-cloud code and interaction sketch explore two parts of the concept: generating a response from a captured scene and navigating the display. The physical ring and live adjustment preview are represented in the product and interface designs.</p>
         </div>
-        <!-- Redraw as Capture → Encode → Interpret → Compare → Display, then add one electronics prototype photograph if available. -->
+        <!-- PDF p. 23: redraw Camera → Base64 → Qwen VL image analysis → Chatbot interpretation. Beside it, show the separate swipe/switching sketch; do not diagram these as one fully integrated device. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus system flow forthcoming">
           <span>System flow forthcoming</span>
         </div>
@@ -78,13 +78,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>INTERPRETATION, NOT MEASUREMENT</h2>
+      <h2>A CULTURAL INTERFACE FOR EVERYDAY SPACES</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>Aetherus treats Feng Shui and astrology as cultural and interpretive belief systems. The device does not scientifically measure luck, energy, or environmental quality, and its outputs should not be framed as objective spatial analysis.</p>
-          <p>A future iteration could make the sources and uncertainty behind each response more visible, and focus on supporting reflection and conversation instead of producing an authoritative recommendation.</p>
+          <p>The outcome brings together product form, interface sequences, and technical explorations for looking at interiors and building sites through different cultural frameworks. Its central interaction is the movement between perspectives: turn the ring, inspect a suggestion, and preview an alternative.</p>
+          <p>Feng Shui and astrology are treated here as interpretive belief systems, not scientific measurements of luck or energy. A next iteration would make the source of each suggestion clearer and explore how people understand disagreement between the two modes.</p>
         </div>
-        <!-- Add three use-scenario images: interior scan, building orientation, and ambient display. -->
+        <!-- PDF p. 25: use the interior, outdoor-site, and idle-display scenario renders as three small panels. Retain the concept context; omit claims of improving health, wealth, or fortune. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus use scenarios forthcoming">
           <span>Use scenarios forthcoming</span>
         </div>
