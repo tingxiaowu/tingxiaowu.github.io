@@ -6,13 +6,14 @@
   <title>Empathy Pulse — Tingxiao Wu</title>
   <meta name="description" content="An exploratory wearable translating animal behavioral cues into multimodal human feedback.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/site.css?v=20260906-lina-layout">
+  <link rel="stylesheet" href="/assets/site.css?v=20260906-video-story">
   <script src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
 
   <main class="portfolio-detail">
+    <a class="portfolio-back" href="/projects/"><span aria-hidden="true">←</span> Back to Projects</a>
     <header class="portfolio-project-header">
       <h1>Empathy Pulse</h1>
       <p class="project-intro">Empathy Pulse is an exploratory wearable interface that translates selected animal behavioral cues into visual, vibrotactile, pneumatic, and audio feedback.</p>
@@ -21,7 +22,7 @@
     </header>
 
     <section class="portfolio-story">
-      <h2>BACKGROUND</h2>
+      <h2>NOTICING CUES ACROSS SPECIES</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>Animal posture, facial movement, and vocalization can be easy for an untrained observer to miss or misinterpret. This creates a communication gap: a person may want to approach an animal but may not notice cues that suggest comfort, stress, or a need for distance.</p>
@@ -35,11 +36,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>DESIGN CONCEPTION</h2>
+      <h2>WHY MULTIMODAL FEEDBACK?</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>I designed the experience around three principles: make a cue noticeable, describe its interpretation cautiously, and distinguish an invitation to interact from a recommendation to keep distance.</p>
-          <p>Rather than relying on a single alert, Empathy Pulse distributes information across four feedback channels. The display communicates the interpreted state, vibration creates an immediate peripheral cue, the inflatable bladder provides a slower bodily signal, and sound adds contextual guidance.</p>
+          <p>The interaction has two jobs: draw attention to a cue and help the wearer decide how to respond. A screen can explain an interpretation, but it requires a glance. The wearable therefore combines a readable display with bodily feedback that can be noticed peripherally.</p>
+          <p>The circular display presents the interpreted state and a suggestion. Vibration provides a brief cue, the inflatable bladder adds a changing physical sensation, and audio supplies another feedback channel. The prototype explores these different forms of feedback; it does not establish that all four are necessary or equally effective.</p>
         </div>
         <!-- Use the concept diagram from the portfolio: animal cue → interpretation → four coordinated feedback channels. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Concept and feedback diagram forthcoming">
@@ -49,11 +50,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>SYSTEM DESIGN</h2>
+      <h2>FROM RECOGNITION TESTS TO WEARABLE OUTPUT</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>An <strong>ESP32-CAM</strong> captures visual information, while an <strong>INMP441 microphone</strong> captures nearby sound. A proof-of-concept pipeline processes selected cues and sends an output state to the wearable.</p>
-          <p>The output is presented through a 1.28-inch circular display, a vibration motor, a miniature pneumatic bladder, and a speaker. The prototype connects sensing, interpretation, and feedback in one end-to-end demonstration.</p>
+          <p>The portfolio documents browser-based recognition explorations using p5.js and a machine-learning library with dog videos, as well as Teachable Machine experiments. These tests explored how selected animal cues could produce output states. The wearable hardware presents those states through the display, vibration motor, pneumatic bladder, and speaker.</p>
         </div>
         <!-- Add a labelled hardware spread: ESP32-CAM, microphone, display, vibration motor, pump, valve/bladder, and speaker. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Empathy Pulse hardware details forthcoming">
@@ -63,10 +64,10 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>INTERACTION MODES</h2>
+      <h2>APPROACH OR OBSERVE?</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p><strong>Interactive mode</strong> is designed for controlled, close-range encounters with familiar small animals. The wearable presents a concise cue and a low-risk response the wearer can consider.</p>
+          <p><strong>Interactive mode</strong> explores controlled, close-range encounters with familiar small animals. The scenario emphasizes observation and cautious responses rather than treating a recognition result as permission for direct contact.</p>
           <p><strong>Educational mode</strong> is designed for more distant encounters. It emphasizes identification and context and can explicitly recommend that the wearer does not approach.</p>
         </div>
         <!-- Place two horizontal storyboards here: close-range interaction above, distance/educational encounter below. -->
@@ -77,11 +78,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>PROTOTYPE &amp; REFLECTION</h2>
+      <h2>WHAT THE PROTOTYPE CAN CLAIM</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The project produced a functional multimodal prototype and an end-to-end demonstration with selected animal media. It did not establish a general-purpose animal-affect classifier: an animal's state cannot be reliably reduced to one label from a single image or sound.</p>
-          <p>A future version should report confidence, combine temporal posture and vocalization cues, test false positives, and be developed with veterinarians or animal-behavior specialists. The central evaluation question is whether the feedback supports safer human decisions without disturbing animals.</p>
+          <p>The project combines recognition explorations and multimodal wearable prototyping. Its strongest evidence is the design of the input-to-feedback interaction, not validated access to an animal's internal emotional state. General recognition accuracy and the benefit of each feedback channel remain open questions.</p>
+          <p>A focused next study would compare the display alone with added bodily feedback and examine whether users notice cues without becoming overconfident in the interpretation. Animal-behavior expertise and welfare safeguards would be essential before live-animal testing.</p>
         </div>
         <!-- Add a 20–40 second silent loop showing the display, vibration, and pneumatic bladder responding together. -->
         <div class="portfolio-media-placeholder portfolio-video-placeholder" role="img" aria-label="Empathy Pulse prototype video forthcoming">

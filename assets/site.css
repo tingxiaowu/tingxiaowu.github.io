@@ -240,6 +240,13 @@ a { color: inherit; text-decoration-color: var(--text); }
 .project-preview-card .project-placeholder span { font-size: .62rem; }
 
 .portfolio-detail { width: min(980px, calc(100% - 48px)); margin: 0 auto; padding: 62px 0 96px; }
+.portfolio-back { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; margin: -16px 0 20px; padding: 8px 0; color: var(--accent); font-size: .875rem; font-weight: 700; text-decoration: none; }
+.portfolio-back:hover { color: var(--text); }
+.portfolio-back:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.portfolio-feature-video { margin: 32px 0 0; max-width: 880px; }
+.portfolio-feature-video iframe { display: block; width: 100%; height: auto; min-height: 200px; aspect-ratio: 16 / 9; border: 0; background: var(--surface-soft); }
+.portfolio-feature-video figcaption { margin-top: 8px; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+.portfolio-feature-video + .portfolio-story { margin-top: 56px; }
 .portfolio-project-header { max-width: 920px; }
 .portfolio-project-header h1 { margin: 0; font: 700 clamp(2rem, 3.5vw, 2.75rem)/1.16 Georgia, "Times New Roman", serif; letter-spacing: -.025em; }
 .portfolio-project-header .title-translation { display: block; margin-top: 8px; color: var(--muted); font: 500 .5em/1.35 Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0; }
@@ -250,12 +257,12 @@ a { color: inherit; text-decoration-color: var(--text); }
 .project-award { max-width: 780px; margin: 3px 0 0; color: var(--accent); font-size: .78rem; font-weight: 700; line-height: 1.55; }
 .portfolio-text-link { display: inline-block; margin-top: 14px; color: var(--accent); font-size: .82rem; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .portfolio-text-link:hover { color: var(--text); }
-.portfolio-story { margin-top: 92px; }
+.portfolio-story { margin-top: 64px; }
 .portfolio-story + .portfolio-story { margin-top: 82px; }
 .portfolio-story > h2 { margin: 0 0 20px; font: 800 .9rem/1.25 Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .075em; }
 .portfolio-story-grid { display: grid; grid-template-columns: minmax(250px, .78fr) minmax(0, 1.22fr); gap: clamp(34px, 5vw, 58px); align-items: start; }
 .portfolio-copy { min-width: 0; }
-.portfolio-copy p { margin: 0 0 16px; color: var(--muted); font-size: .9rem; line-height: 1.72; }
+.portfolio-copy p { margin: 0 0 16px; color: var(--muted); font-size: 1rem; line-height: 1.72; }
 .portfolio-copy p:last-child { margin-bottom: 0; }
 .portfolio-copy strong { color: var(--text); font-weight: 700; }
 .portfolio-media { min-width: 0; margin: 0; }

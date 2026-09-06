@@ -6,22 +6,23 @@
   <title>Aetherus — Tingxiao Wu</title>
   <meta name="description" content="A tangible cultural-computing concept for comparing Feng Shui and local-space astrology.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/site.css?v=20260906-lina-layout">
+  <link rel="stylesheet" href="/assets/site.css?v=20260906-video-story">
   <script src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
 
   <main class="portfolio-detail">
+    <a class="portfolio-back" href="/projects/"><span aria-hidden="true">←</span> Back to Projects</a>
     <header class="portfolio-project-header">
       <h1>Aetherus</h1>
-      <p class="project-intro">Aetherus is a tangible cultural-computing concept that lets people compare Chinese Feng Shui and Western local-space astrology as two interpretations of the same place.</p>
+      <p class="project-intro">Aetherus is a camera-equipped device concept for exploring a place through Feng Shui and local-space astrology. A rotating ring switches between the two interpretations and a combined view.</p>
       <p class="project-attribution">Project Lead: <strong>Tingxiao Wu</strong></p>
       <p class="project-disciplines">Tangible Interaction · Cultural Computing · Product Design</p>
     </header>
 
     <section class="portfolio-story">
-      <h2>BACKGROUND</h2>
+      <h2>TWO WAYS OF READING A PLACE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>People use many cultural frameworks to interpret the relationship between themselves and a place. Feng Shui and local-space astrology come from different histories, symbols, and assumptions, yet both connect spatial direction with personal meaning.</p>
@@ -35,10 +36,10 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>DESIGN CONCEPTION</h2>
+      <h2>ONE OBJECT, THREE PERSPECTIVES</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>Users provide personal context, point the device toward a room or site, and move among three views: Feng Shui, astrology, and a combined comparison. Each mode retains its own visual language and presents recommendations as an interpretation to examine.</p>
+          <p>The proposed flow begins with personal context and an image of a room or site. The interface then presents a Feng Shui interpretation, an astrology interpretation, or a combined view. Keeping the modes visible makes the selected perspective an explicit part of the interaction.</p>
           <p>When it is not being used for spatial exploration, the object becomes an ambient display inspired by traditional talisman forms.</p>
         </div>
         <!-- Show the three interface modes as equal panels: Feng Shui, astrology, and combined comparison. -->
@@ -49,11 +50,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>INTERACTION DESIGN</h2>
+      <h2>TURN, COMPARE, AND PREVIEW</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The main control is a rotatable adjustment ring. Turning the ring switches the interpretive mode and changes the visual language on the display. After scanning a space, the user can unfold a recommendation, identify a suggested spatial change, and toggle a visual preview.</p>
-          <p>The physical gesture keeps comparison continuous: instead of navigating separate applications, the user moves directly between viewpoints while looking at the same environment.</p>
+          <p>The adjustment ring is the main mode selector. In the interaction concept, turning it changes the interpretation and visual language on the screen. Users can inspect a recommendation and activate an Adjust control to preview a proposed spatial change.</p>
+          <p>The design pairs a physical gesture for changing perspective with screen controls for inspecting its consequences. This lets the same captured place anchor the comparison, rather than requiring the user to restart the task in each mode.</p>
         </div>
         <!-- Pair the ring-turning gesture with the corresponding on-screen transitions; include the exploded view beneath it. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus tangible interaction sequence forthcoming">
@@ -63,11 +64,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>HOW I MADE IT</h2>
+      <h2>SEPARATING THE CONCEPT FROM THE PROTOTYPE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>The proof of concept connects an <strong>ESP32-CAM</strong> to a cloud-based multimodal model. A captured image is encoded and sent for text-based interpretation, while a separate interface prototype demonstrates mode switching and the presentation of recommendations.</p>
-          <p>This architecture was used to explore the interaction between a handheld object, visual capture, cloud interpretation, and an on-device display. It is a concept and technical prototype rather than a validated environmental-analysis system.</p>
+          <p>The product rendering communicates the intended form; the interface prototype communicates the user flow; the camera-to-cloud experiment explores technical feasibility. These are distinct pieces of evidence, not a claim that every proposed function is integrated into a finished device.</p>
         </div>
         <!-- Redraw as Capture → Encode → Interpret → Compare → Display, then add one electronics prototype photograph if available. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus system flow forthcoming">
@@ -77,7 +78,7 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>SCOPE &amp; REFLECTION</h2>
+      <h2>INTERPRETATION, NOT MEASUREMENT</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>Aetherus treats Feng Shui and astrology as cultural and interpretive belief systems. The device does not scientifically measure luck, energy, or environmental quality, and its outputs should not be framed as objective spatial analysis.</p>

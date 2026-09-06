@@ -6,40 +6,45 @@
   <title>Emotion: The Transparent Realm — Tingxiao Wu</title>
   <meta name="description" content="A narrative VR game about emotional disclosure, privacy, and the boundaries of intimacy.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/site.css?v=20260906-lina-layout">
+  <link rel="stylesheet" href="/assets/site.css?v=20260906-video-story">
   <script src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
 
   <main class="portfolio-detail">
+    <a class="portfolio-back" href="/projects/"><span aria-hidden="true">←</span> Back to Projects</a>
     <header class="portfolio-project-header">
       <h1>Emotion: The Transparent Realm</h1>
-      <p class="project-intro">This narrative VR game explores emotional disclosure, privacy, and the boundaries of intimacy in a world where AI can reveal feelings that people have chosen not to express.</p>
+      <p class="project-intro">What if private feelings became characters that others could see? Emotion: The Transparent Realm is a narrative VR game that turns this premise into encounters about disclosure, privacy, and intimacy.</p>
       <p class="project-attribution">Project Lead: <strong>Tingxiao Wu</strong></p>
       <p class="project-disciplines">Virtual Reality · Critical Design · Narrative Interaction</p>
-      <a class="portfolio-text-link" href="https://youtu.be/XqO1UTJMj60" target="_blank" rel="noreferrer">Watch gameplay video ↗</a>
     </header>
 
+    <figure class="portfolio-feature-video">
+      <iframe width="880" height="495" src="https://www.youtube-nocookie.com/embed/XqO1UTJMj60?playsinline=1&amp;rel=0" title="Emotion: The Transparent Realm — gameplay" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      <figcaption>Gameplay walkthrough of the VR prototype.</figcaption>
+    </figure>
+
     <section class="portfolio-story">
-      <h2>BACKGROUND</h2>
+      <h2>WHEN PRIVATE FEELINGS BECOME PUBLIC</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>Emotion-recognition technologies are often framed as tools that make communication clearer. Yet emotional opacity can also protect privacy, give people time to reflect, and help relationships tolerate uncertainty.</p>
+          <p>The game starts from a conflict rather than a promise of better emotion recognition: knowing more about another person's feelings does not necessarily give us permission to expose them. The fictional AI makes this conflict unavoidable by revealing feelings the characters have chosen to keep private.</p>
           <p><strong>The project asks a critical question: does making every emotion visible necessarily create a more honest or caring relationship?</strong></p>
         </div>
-        <!-- Add an 8–12 second gameplay loop: ordinary encounter → exposed emotion → player response. -->
-        <div class="portfolio-media-placeholder portfolio-video-placeholder" role="img" aria-label="Emotion gameplay video forthcoming">
-          <span>Gameplay video forthcoming</span>
+        <!-- Add a paired still: an ordinary conversation beside the same encounter after the emotion becomes visible. The complete video is already above. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="Before-and-after emotion reveal stills forthcoming">
+          <span>Emotion reveal stills forthcoming</span>
         </div>
       </div>
     </section>
 
     <section class="portfolio-story">
-      <h2>GAME CONCEPTION</h2>
+      <h2>THREE RELATIONSHIPS, ONE ESCALATING CONFLICT</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>I translated this question into a first-person story in which hidden feelings become visible characters. These figures interrupt a conversation, confront the player, and gradually expose the system responsible for making private emotion public.</p>
+          <p>The story externalizes private feelings as visible characters. They interrupt conversations and confront the player, turning something internal into a presence that occupies the same space. This gives emotional disclosure a consequence the player encounters rather than merely reads about.</p>
           <p>The experience moves through three relationship-based levels—friendship, family, and romantic partnership—before a final confrontation. Each stage introduces a familiar social tension and asks the player to balance honesty, self-protection, and the expectations that sustain a close relationship.</p>
         </div>
         <!-- Use the four-stage narrative diagram from the portfolio, followed by three clean world/character renders. -->
@@ -50,11 +55,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>INTERACTION DESIGN</h2>
+      <h2>TURNING DISCLOSURE INTO ACTION</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>Tracked controllers turn emotional conflict into embodied action. Players move through the scene, search for objects, grab and examine clues, comfort characters through gesture, dodge emotion figures, and face the final source of exposure.</p>
-          <p>The interaction rhythm shifts deliberately from ordinary conversation to increasingly visible and uncontrollable disclosure, allowing the mechanics to carry the same tension as the narrative.</p>
+          <p>Comforting, approaching, and avoiding become physical responses to the revealed emotion. The progression from conversation to spatial confrontation connects the controller interactions to the central question of how to respond when someone else's private feelings become visible.</p>
         </div>
         <!-- Place three stills side by side: comfort gesture, search/grab interaction, and final encounter. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="VR interaction sequence forthcoming">
@@ -64,11 +69,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>HOW I MADE IT</h2>
+      <h2>BUILDING THE VR EXPERIENCE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>I built the experience as a functional first-person VR prototype with controller-based navigation and object interaction. Development included NPC orientation, animated emotion figures, shader and lighting work, collision behavior, and frame-by-frame visual effects.</p>
-          <p>Simulator tests revealed inconsistent scene tone, perspective tracking, and text occlusion. I revised these elements before testing the experience in the headset.</p>
+          <p>The experience was developed as a first-person VR prototype with controller-based navigation and object interaction. Its implementation brings together NPC orientation, animated emotion figures, shaders and lighting, collisions, and frame-by-frame visual effects.</p>
+          <p>The development account identifies scene tone, perspective tracking, and text occlusion as iteration issues before the headset demo. These details matter because the player needs to follow both a conversation and the emotion figures entering the scene.</p>
         </div>
         <!-- Add a process collage: Unity scene view, character animation, shader/lighting test, and headset test. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="VR development process images forthcoming">
@@ -78,11 +83,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>FORMATIVE PLAYTEST</h2>
+      <h2>WHAT THE FIRST PLAYTEST REVEALED</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>A formative playtest with three participants suggested that the emotional-transparency premise and embodied interactions were engaging. Participants also identified abrupt transitions between story events and limited audio design.</p>
-          <p>These observations define the next iteration: smoother narrative transitions, a clearer relationship between sound and exposed emotion, and a larger study focused on how players interpret the ethical tension. The current feedback is directional, not evidence that the experience changes attitudes or relationships.</p>
+          <p>The feedback suggests a specific next step: make the transitions and audio communicate why each revelation follows the previous encounter. With only three participants, the playtest informs iteration; it does not establish broader effects on attitudes or relationships.</p>
         </div>
         <!-- Add one playtest photograph and a concise before/after diagram of the transition and audio revisions. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Playtest documentation forthcoming">
