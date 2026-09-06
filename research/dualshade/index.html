@@ -6,13 +6,14 @@
   <title>DualShade — Tingxiao Wu</title>
   <meta name="description" content="Dual-layer adaptive eyewear for glare and luminance control.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/site.css?v=20260906-lina-layout">
+  <link rel="stylesheet" href="/assets/site.css?v=20260906-video-story">
   <script src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
 
   <main class="portfolio-detail">
+    <a class="portfolio-back" href="/projects/"><span aria-hidden="true">←</span> Back to Projects</a>
     <header class="portfolio-project-header">
       <h1>DualShade: A Fail-Safe Dual-Layer Adaptive Eyewear for Real-Time Glare and Luminance Control</h1>
       <p class="project-intro">This is the final project for my master program's course---"CDE5312: Beyond the Surface: Exploring Interactive Wearables", and in the 2025 NUS EDIC showcase, it got the best prototype award.</p>
@@ -21,7 +22,7 @@
     </header>
 
     <section class="portfolio-story">
-      <h2>BACKGROUND</h2>
+      <h2>TWO LIGHTING PROBLEMS, TWO OPTICAL RESPONSES</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>Sudden luminance changes and localized glare can briefly make visual information difficult to read. Existing solutions usually address only part of this problem: sunglasses darken the entire view, photochromic lenses may react slowly, and opaque visors can hide useful visual cues.</p>
@@ -35,7 +36,7 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>DESIGN CONCEPTION</h2>
+      <h2>SEPARATING GLOBAL DIMMING FROM LOCAL MASKING</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>The concept separates brightness control into two transparent layers. <strong>Layer 1</strong> provides smooth, scene-wide electro-optic dimming during rapid luminance transitions. <strong>Layer 2</strong> uses a transparent LCD mask to attenuate one of three directional zones when a localized glare source appears.</p>
@@ -49,7 +50,7 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>HOW IT WORKS</h2>
+      <h2>WHEN TO DIM — AND WHEN TO CLEAR</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>A TSL2591 sensor measures global illuminance, while three BH1750 sensors sample directional light. An ESP32 combines these readings and controls the two optical layers.</p>
@@ -63,10 +64,10 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>MAKING PROCESS</h2>
+      <h2>INTEGRATING THE WEARABLE PROTOTYPE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>We integrated the optical layers, four light sensors, and control electronics into a wearable frame, then iterated the thresholds and timing through controlled lighting changes. The making process focused on keeping the sensing directions legible, aligning the three LCD zones with the field of view, and coordinating the layers without visible control conflict.</p>
+          <p>The wearable prototype combines two optical layers with global and directional light sensing. Its operation depends on three connected decisions: how much to dim the scene, which of the three zones to mask, and when to release both interventions. This makes control behavior as important as the physical lens assembly.</p>
           <p>The final demonstration supports four states: transparent, global dimming, localized masking, and a combined response.</p>
         </div>
         <!-- Add 3–4 photographs: early lens test, sensor placement, wiring integration, and final wearable assembly. -->
@@ -77,11 +78,11 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>PROTOTYPE EVALUATION</h2>
+      <h2>WHAT THE TESTS SHOW</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
           <p>Bench testing measured an approximately <strong>390 ms</strong> response for Layer 1 and approximately <strong>217 ms</strong> activation and <strong>167 ms</strong> release for Layer 2. Layer 1 reduced measured light by approximately <strong>41%</strong>; using both layers produced approximately <strong>67%</strong> attenuation.</p>
-          <p>In a nine-person readability task, the prototype received an average score of <strong>5.3/7</strong>. In a separate 21-person scenario survey, all participants wanted critical visual information to remain visible, and 15 indicated willingness to use the concept. These results are early prototype evidence rather than a road-safety validation.</p>
+          <p>In a nine-person readability task, the prototype received an average score of <strong>5.3/7</strong>. In a separate 21-person scenario survey, all participants wanted critical visual information to remain visible, and 15 indicated willingness to use the concept. These measurements characterize response timing, attenuation, and early user feedback. They do not establish on-road safety; the current localized response also uses three zones rather than continuous hotspot tracking.</p>
         </div>
         <!-- Add one short looping clip showing transparent → global dimming → zonal masking → fail-safe transparency. -->
         <div class="portfolio-media-placeholder portfolio-video-placeholder" role="img" aria-label="DualShade response video forthcoming">
