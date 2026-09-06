@@ -16,7 +16,7 @@
     <a class="portfolio-back" href="/projects/"><span aria-hidden="true">←</span> Back to Projects</a>
     <header class="portfolio-project-header">
       <h1>Empathy Pulse</h1>
-      <p class="project-intro">Empathy Pulse is an exploratory wearable interface that translates selected animal behavioral cues into visual, vibrotactile, pneumatic, and audio feedback.</p>
+      <p class="project-intro">Empathy Pulse is a hand-worn interface that explores how animal behavioral cues could be translated into a display, vibration, pneumatic pressure, and sound, helping the wearer consider how to respond.</p>
       <p class="project-attribution">Project Lead: <strong>Tingxiao Wu</strong></p>
       <p class="project-disciplines">Wearable Interaction · Embedded Hardware · Pneumatic Feedback</p>
     </header>
@@ -25,10 +25,10 @@
       <h2>NOTICING CUES ACROSS SPECIES</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>Animal posture, facial movement, and vocalization can be easy for an untrained observer to miss or misinterpret. This creates a communication gap: a person may want to approach an animal but may not notice cues that suggest comfort, stress, or a need for distance.</p>
-          <p><strong>The project explores whether bodily feedback can make these cues more noticeable without presenting machine interpretation as certainty.</strong></p>
+          <p>Field observations across pet markets, streets, farms, zoos, and other animal settings, together with interviews across age groups, shaped the project. People described very different understandings of animal behavior, from recognizing distress in a familiar pet to misreading an animal's reluctance to interact.</p>
+          <p><strong>We asked how a wearable could draw attention to these cues at the moment of an encounter.</strong> The device is worn by the person, with a circular display on the hand and feedback components around the wrist.</p>
         </div>
-        <!-- Add the cleanest photograph of the complete wearable on the forearm; keep the circular display, tubing, and pneumatic bladder visible. -->
+        <!-- PDF p. 19 Product Photography: use the cleanest complete-device photograph. Keep the display on the back of the hand, wrist straps, tubing, and bladder visible; p. 18 contains assembly details. -->
         <div class="portfolio-media-placeholder portfolio-portrait-placeholder" role="img" aria-label="Empathy Pulse wearable photograph forthcoming">
           <span>Wearable photograph forthcoming</span>
         </div>
@@ -36,13 +36,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>WHY MULTIMODAL FEEDBACK?</h2>
+      <h2>GIVING EACH FEEDBACK CHANNEL A ROLE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The interaction has two jobs: draw attention to a cue and help the wearer decide how to respond. A screen can explain an interpretation, but it requires a glance. The wearable therefore combines a readable display with bodily feedback that can be noticed peripherally.</p>
-          <p>The circular display presents the interpreted state and a suggestion. Vibration provides a brief cue, the inflatable bladder adds a changing physical sensation, and audio supplies another feedback channel. The prototype explores these different forms of feedback; it does not establish that all four are necessary or equally effective.</p>
+          <p>The proposed feedback map links five interpreted states—calm, happy, sad or in pain, uneasy or panicked, and angry—to different colors, vibration patterns, and airbag responses. The display gives the state a readable label and pairs it with a suggestion such as observe, avoid disturbing, or move away.</p>
+          <p>The design intention is to combine an immediate bodily cue with an explanation the wearer can inspect. A speaker adds an audio channel to the interaction concept. These mappings are design choices to explore, rather than a universal vocabulary for animal emotion.</p>
         </div>
-        <!-- Use the concept diagram from the portfolio: animal cue → interpretation → four coordinated feedback channels. -->
+        <!-- PDF p. 17 feedback matrix: redraw a small set of state → screen → vibration → airbag mappings. Label them as proposed mappings; avoid the crowded full-page workflow. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Concept and feedback diagram forthcoming">
           <span>Concept diagram forthcoming</span>
         </div>
@@ -50,13 +50,13 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>FROM RECOGNITION TESTS TO WEARABLE OUTPUT</h2>
+      <h2>BUILDING THE SENSING AND FEEDBACK HARDWARE</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>An <strong>ESP32-CAM</strong> captures visual information, while an <strong>INMP441 microphone</strong> captures nearby sound. A proof-of-concept pipeline processes selected cues and sends an output state to the wearable.</p>
-          <p>The portfolio documents browser-based recognition explorations using p5.js and a machine-learning library with dog videos, as well as Teachable Machine experiments. These tests explored how selected animal cues could produce output states. The wearable hardware presents those states through the display, vibration motor, pneumatic bladder, and speaker.</p>
+          <p>The hardware architecture pairs an <strong>ESP32-CAM with an OV2640 camera</strong> and an <strong>INMP441 microphone</strong> for image and sound input. An ESP32 links the sensing side to the output components: a circular RP2040-LCD-1.28 display, vibration motor, air pump and bladder, and a speaker with an I2S audio module.</p>
+          <p>We explored the output channels through separate display, motor, and pump tests, alongside the wearable assembly. This making process translated the feedback map into physical components that could be positioned on the hand and wrist.</p>
         </div>
-        <!-- Add a labelled hardware spread: ESP32-CAM, microphone, display, vibration motor, pump, valve/bladder, and speaker. -->
+        <!-- PDF p. 18: combine the actual display, vibration-motor, and pump test photographs with a simplified component diagram. Do not add undocumented valves or imply a complete validated recognition pipeline. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Empathy Pulse hardware details forthcoming">
           <span>Hardware details forthcoming</span>
         </div>
@@ -67,10 +67,10 @@
       <h2>APPROACH OR OBSERVE?</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p><strong>Interactive mode</strong> explores controlled, close-range encounters with familiar small animals. The scenario emphasizes observation and cautious responses rather than treating a recognition result as permission for direct contact.</p>
-          <p><strong>Educational mode</strong> is designed for more distant encounters. It emphasizes identification and context and can explicitly recommend that the wearer does not approach.</p>
+          <p><strong>Interactive mode</strong> is intended for close-range encounters with small animals, where the concept can draw on visual cues and sound. The screen combines an interpreted state with a response suggestion, while the wrist feedback draws attention to it.</p>
+          <p><strong>Educational mode</strong> addresses distant encounters, where the scenario relies on sound and contextual information. In the bird-habitat storyboard, the device recommends leaving the area to avoid disturbance. The two modes distinguish learning about an animal from being invited to approach it.</p>
         </div>
-        <!-- Place two horizontal storyboards here: close-range interaction above, distance/educational encounter below. -->
+        <!-- PDF p. 19: crop the close-range small-animal and distant bird-habitat sequences into two readable strips. Caption them as usage scenarios, not recognition-validation trials. -->
         <div class="portfolio-media-placeholder" role="img" aria-label="Interaction-mode storyboards forthcoming">
           <span>Interaction storyboards forthcoming</span>
         </div>
@@ -78,15 +78,15 @@
     </section>
 
     <section class="portfolio-story">
-      <h2>WHAT THE PROTOTYPE CAN CLAIM</h2>
+      <h2>TESTING THE RECOGNITION CONCEPT</h2>
       <div class="portfolio-story-grid">
         <div class="portfolio-copy">
-          <p>The project combines recognition explorations and multimodal wearable prototyping. Its strongest evidence is the design of the input-to-feedback interaction, not validated access to an animal's internal emotional state. General recognition accuracy and the benefit of each feedback channel remain open questions.</p>
-          <p>A focused next study would compare the display alone with added bodily feedback and examine whether users notice cues without becoming overconfident in the interpretation. Animal-behavior expertise and welfare safeguards would be essential before live-animal testing.</p>
+          <p>We used <strong>Teachable Machine</strong> for initial recognition experiments and a browser-based p5.js demonstration to test image recognition with dog videos. These explorations sat alongside the hardware tests and the illustrated use scenarios.</p>
+          <p>The project demonstrates an approach to connecting recognition outputs with wearable feedback. It does not yet establish reliable animal-emotion classification or show which feedback channels help users most. A next iteration would test those questions separately, with animal-behavior expertise informing the interpretation of cues.</p>
         </div>
-        <!-- Add a 20–40 second silent loop showing the display, vibration, and pneumatic bladder responding together. -->
-        <div class="portfolio-media-placeholder portfolio-video-placeholder" role="img" aria-label="Empathy Pulse prototype video forthcoming">
-          <span>Prototype video forthcoming</span>
+        <!-- PDF p. 18 Recognition Model panel: use a readable crop of the dog-video recognition test next to the Teachable Machine experiment. Add a real hardware response clip later if supplied. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="Empathy Pulse recognition test images forthcoming">
+          <span>Recognition tests forthcoming</span>
         </div>
       </div>
     </section>
