@@ -268,6 +268,7 @@ a { color: inherit; text-decoration-color: var(--text); }
 .portfolio-copy strong { color: var(--text); font-weight: 700; }
 .portfolio-media { min-width: 0; margin: 0; }
 .portfolio-media img { width: 100%; height: auto; display: block; background: var(--surface-soft); }
+.portfolio-inline-video iframe { display: block; width: 100%; height: auto; min-height: 180px; aspect-ratio: 16 / 9; border: 0; background: #000; }
 .portfolio-media figcaption { margin-top: 7px; color: var(--muted); font-size: .71rem; line-height: 1.5; }
 .portfolio-media-placeholder { width: 100%; min-height: 300px; aspect-ratio: 4 / 3; display: grid; place-items: center; padding: 24px; border: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); text-align: center; }
 .portfolio-media-placeholder span { font-size: .72rem; font-weight: 700; letter-spacing: .09em; line-height: 1.45; text-transform: uppercase; }
