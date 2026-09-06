@@ -245,6 +245,7 @@ a { color: inherit; text-decoration-color: var(--text); }
 .portfolio-back:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .portfolio-feature-video { margin: 32px 0 0; max-width: 880px; }
 .portfolio-feature-video iframe { display: block; width: 100%; height: auto; min-height: 200px; aspect-ratio: 16 / 9; border: 0; background: var(--surface-soft); }
+.portfolio-feature-video img { display: block; width: 100%; height: auto; background: var(--surface-soft); }
 .portfolio-feature-video figcaption { margin-top: 8px; color: var(--muted); font-size: .8rem; line-height: 1.5; }
 .portfolio-feature-video + .portfolio-story { margin-top: 56px; }
 .portfolio-project-header { max-width: 920px; }
