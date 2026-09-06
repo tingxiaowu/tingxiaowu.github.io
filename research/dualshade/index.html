@@ -1,7 +1,96 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DualShade — Tingxiao Wu</title><meta name="description" content="Dual-layer adaptive eyewear for glare and luminance control."><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v=20260904-projects"><script src="/assets/site.js"></script></head>
-<body><header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
-<main class="detail"><a class="back" href="/projects/">← Back to projects</a><h1>DualShade: A Fail-Safe Dual-Layer Adaptive Eyewear for Real-Time Glare and Luminance Control</h1><p class="author-line">Project Lead: <strong>Tingxiao Wu</strong> · Collaborators: Yuheng Tao and Shaoyu Cai</p><p class="project-meta-line">Physical Interface · Embedded Sensing · Research Prototype</p><div class="detail-meta-grid" aria-label="Project details"><div class="detail-meta-item"><span class="detail-meta-label">Year</span><span class="detail-meta-value">2025</span></div><div class="detail-meta-item"><span class="detail-meta-label">Type</span><span class="detail-meta-value">Course project</span></div><div class="detail-meta-item"><span class="detail-meta-label">Focus</span><span class="detail-meta-value">Adaptive optics and fail-safe control</span></div></div>
-<figure class="media-figure"><div class="media-frame"><img class="project-hero" src="/assets/images/dualshade-hero.webp" alt="DualShade adaptive eyewear prototype"><span class="media-credit">© Tingxiao Wu and collaborators, 2025</span></div><figcaption>DualShade dual-layer adaptive eyewear prototype.</figcaption></figure>
-<h2>Overview</h2><p class="overview-copy">Sudden luminance transitions and localized glare can temporarily reduce the readability of visual information. Conventional countermeasures often respond too globally or too coarsely: sunglasses darken the whole field of view, photochromic lenses may respond slowly or inconsistently, and visors can block important visual cues. We present DualShade, a camera-free dual-layer adaptive eyewear that decouples scene-wide luminance adaptation from localized glare suppression. Layer 1 provides smooth global electro-optic tinting for rapid brightness transitions, while Layer 2 uses a transparent LCD mask to selectively attenuate one of three zones for directional glare hotspots. A lightweight sensing pipeline combines global and directional illuminance sensing, and a confidence-gated control policy returns the system to a transparent state under low light or uncertainty. In the live demonstration, visitors wear DualShade and experience global dimming, localized zonal masking, combined response, and fail-safe transparency in a controlled tabletop visual scene.</p>
-<figure class="media-figure"><div class="media-frame"><img class="project-hero" src="/assets/images/dualshade-system.png" alt="DualShade sensing, control, and dual-layer lens system with prototype states"><span class="media-credit">© Tingxiao Wu and collaborators, 2025</span></div><figcaption>DualShade system architecture and Layer 1 / Layer 2 prototype responses.</figcaption></figure><h2>Prototype Gallery</h2><div class="visual-grid"><div class="image-slot"><div><strong>Lens states</strong><br>Add matched photographs of transparent, globally dimmed, and zonally masked states.</div></div><div class="image-slot"><div><strong>Sensing hardware</strong><br>Add one close-up showing the directional and global illuminance sensors.</div></div><div class="image-slot"><div><strong>Live demonstration</strong><br>Add a short loop showing brightness transition, glare response, and fail-safe transparency.</div></div></div></main>
-<footer class="footer"><div class="shell footer-inner"><span>Last updated: September 4, 2026</span><span>Built with inspiration from <a href="https://github.com/xyjoey/PRISM">PRISM</a> · MIT License</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DualShade — Tingxiao Wu</title>
+  <meta name="description" content="Dual-layer adaptive eyewear for glare and luminance control.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260906-lina-layout">
+  <script src="/assets/site.js"></script>
+</head>
+<body>
+  <header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
+
+  <main class="portfolio-detail">
+    <header class="portfolio-project-header">
+      <h1>DualShade: A Fail-Safe Dual-Layer Adaptive Eyewear for Real-Time Glare and Luminance Control</h1>
+      <p class="project-intro">This is the final project for my master program's course---"CDE5312: Beyond the Surface: Exploring Interactive Wearables", and in the 2025 NUS EDIC showcase, it got the best prototype award.</p>
+      <p class="project-attribution">Project Lead: <strong>Tingxiao Wu</strong> · Collaborators: Yuheng Tao and Shaoyu Cai</p>
+      <p class="project-disciplines">Wearable Interaction · Embedded Sensing · Research Prototype</p>
+    </header>
+
+    <section class="portfolio-story">
+      <h2>BACKGROUND</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>Sudden luminance changes and localized glare can briefly make visual information difficult to read. Existing solutions usually address only part of this problem: sunglasses darken the entire view, photochromic lenses may react slowly, and opaque visors can hide useful visual cues.</p>
+          <p><strong>DualShade asks how wearable optics can respond to both global brightness and directional glare while remaining transparent when sensing is uncertain.</strong></p>
+        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/dualshade-hero.webp" alt="DualShade adaptive eyewear prototype">
+          <figcaption>The completed DualShade wearable prototype.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>DESIGN CONCEPTION</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>The concept separates brightness control into two transparent layers. <strong>Layer 1</strong> provides smooth, scene-wide electro-optic dimming during rapid luminance transitions. <strong>Layer 2</strong> uses a transparent LCD mask to attenuate one of three directional zones when a localized glare source appears.</p>
+          <p>By decoupling these responses, the system can reduce a bright hotspot without unnecessarily darkening the rest of the wearer's field of view.</p>
+        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/dualshade-system.png" alt="DualShade sensing, control, and dual-layer lens system">
+          <figcaption>System architecture and the visual states produced by the two optical layers.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>HOW IT WORKS</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>A TSL2591 sensor measures global illuminance, while three BH1750 sensors sample directional light. An ESP32 combines these readings and controls the two optical layers.</p>
+          <p>A confidence-gated policy is central to the design. When ambient light is low or the directional reading is uncertain, the eyewear returns to a transparent state so that the intervention does not create a new visibility risk.</p>
+        </div>
+        <!-- Replace with a clean diagram: four sensors → ESP32 decision logic → Layer 1 and Layer 2. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="System flow diagram forthcoming">
+          <span>System flow diagram forthcoming</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>MAKING PROCESS</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>We integrated the optical layers, four light sensors, and control electronics into a wearable frame, then iterated the thresholds and timing through controlled lighting changes. The making process focused on keeping the sensing directions legible, aligning the three LCD zones with the field of view, and coordinating the layers without visible control conflict.</p>
+          <p>The final demonstration supports four states: transparent, global dimming, localized masking, and a combined response.</p>
+        </div>
+        <!-- Add 3–4 photographs: early lens test, sensor placement, wiring integration, and final wearable assembly. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="Prototype development photographs forthcoming">
+          <span>Prototype development images forthcoming</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>PROTOTYPE EVALUATION</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>Bench testing measured an approximately <strong>390 ms</strong> response for Layer 1 and approximately <strong>217 ms</strong> activation and <strong>167 ms</strong> release for Layer 2. Layer 1 reduced measured light by approximately <strong>41%</strong>; using both layers produced approximately <strong>67%</strong> attenuation.</p>
+          <p>In a nine-person readability task, the prototype received an average score of <strong>5.3/7</strong>. In a separate 21-person scenario survey, all participants wanted critical visual information to remain visible, and 15 indicated willingness to use the concept. These results are early prototype evidence rather than a road-safety validation.</p>
+        </div>
+        <!-- Add one short looping clip showing transparent → global dimming → zonal masking → fail-safe transparency. -->
+        <div class="portfolio-media-placeholder portfolio-video-placeholder" role="img" aria-label="DualShade response video forthcoming">
+          <span>Response video forthcoming</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-inner"><span>Last updated: September 6, 2026</span><span>Built with inspiration from <a href="https://github.com/xyjoey/PRISM">PRISM</a> · MIT License</span></div></footer>
+</body>
+</html>

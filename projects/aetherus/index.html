@@ -6,55 +6,91 @@
   <title>Aetherus — Tingxiao Wu</title>
   <meta name="description" content="A tangible cultural-computing concept for comparing Feng Shui and local-space astrology.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/site.css?v=20260904-portfolio-layout">
+  <link rel="stylesheet" href="/assets/site.css?v=20260906-lina-layout">
   <script src="/assets/site.js"></script>
 </head>
 <body>
   <header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
 
-  <main class="detail project-detail">
-    <a class="back" href="/projects/">← Back to projects</a>
-    <h1>Aetherus</h1>
-    <p class="project-deck">A tangible cultural-computing concept for comparing Feng Shui and local-space astrology.</p>
-    <p class="project-meta-line">Tangible Interaction · Cultural Computing · Product Design</p>
-    <div class="detail-meta-grid" aria-label="Project details">
-      <div class="detail-meta-item"><span class="detail-meta-label">Year</span><span class="detail-meta-value">2024</span></div>
-      <div class="detail-meta-item"><span class="detail-meta-label">Role</span><span class="detail-meta-value">Project Lead</span></div>
-      <div class="detail-meta-item"><span class="detail-meta-label">Outcome</span><span class="detail-meta-value">Concept and technical prototype</span></div>
-    </div>
+  <main class="portfolio-detail">
+    <header class="portfolio-project-header">
+      <h1>Aetherus</h1>
+      <p class="project-intro">Aetherus is a tangible cultural-computing concept that lets people compare Chinese Feng Shui and Western local-space astrology as two interpretations of the same place.</p>
+      <p class="project-attribution">Project Lead: <strong>Tingxiao Wu</strong></p>
+      <p class="project-disciplines">Tangible Interaction · Cultural Computing · Product Design</p>
+    </header>
 
-    <!-- Hero: use the three-quarter product render from portfolio page 25, showing the display and adjustment ring. -->
-    <div class="placeholder project-hero-placeholder" role="img" aria-label="Hero image forthcoming: Aetherus product concept render"><span>Hero image forthcoming</span></div>
+    <section class="portfolio-story">
+      <h2>BACKGROUND</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>People use many cultural frameworks to interpret the relationship between themselves and a place. Feng Shui and local-space astrology come from different histories, symbols, and assumptions, yet both connect spatial direction with personal meaning.</p>
+          <p><strong>The project explores how one object could make these differences visible and invite comparison rather than collapsing them into a single answer.</strong></p>
+        </div>
+        <!-- Add the three-quarter product render showing the circular display and adjustment ring. -->
+        <div class="portfolio-media-placeholder portfolio-portrait-placeholder" role="img" aria-label="Aetherus product render forthcoming">
+          <span>Product render forthcoming</span>
+        </div>
+      </div>
+    </section>
 
-    <h2>Overview</h2>
-    <p class="overview-copy">Aetherus explores how two culturally distinct systems for interpreting place—Chinese Feng Shui and Western local-space astrology—might be encountered through one tangible interface. Users provide personal context, point the camera toward a room or site, and switch among Feng Shui, astrology, and combined views. The device is framed as a cultural interpretation tool: it presents contrasting recommendations and lets users compare how different frameworks describe the same environment.</p>
+    <section class="portfolio-story">
+      <h2>DESIGN CONCEPTION</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>Users provide personal context, point the device toward a room or site, and move among three views: Feng Shui, astrology, and a combined comparison. Each mode retains its own visual language and presents recommendations as an interpretation to examine.</p>
+          <p>When it is not being used for spatial exploration, the object becomes an ambient display inspired by traditional talisman forms.</p>
+        </div>
+        <!-- Show the three interface modes as equal panels: Feng Shui, astrology, and combined comparison. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus interface modes forthcoming">
+          <span>Three interface modes forthcoming</span>
+        </div>
+      </div>
+    </section>
 
-    <h2>Interaction</h2>
-    <p class="overview-copy">The central control is a rotatable adjustment ring. Turning the ring switches interpretive modes and changes the visual language of the interface. After scanning a space, a user can unfold recommendations, highlight a suggested spatial change, and toggle a visual preview. When idle, the object becomes an ambient display inspired by traditional talisman forms.</p>
-    <div class="visual-grid">
-      <!-- Show Feng Shui, astrology, and combined views as three equal interface panels. -->
-      <div class="image-slot"><span>Three interface modes</span></div>
-      <!-- Show the ring gesture and corresponding mode changes. -->
-      <div class="image-slot"><span>Tangible control</span></div>
-      <!-- Use the product render from portfolio page 24 with only essential labels. -->
-      <div class="image-slot"><span>Exploded view</span></div>
-    </div>
+    <section class="portfolio-story">
+      <h2>INTERACTION DESIGN</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>The main control is a rotatable adjustment ring. Turning the ring switches the interpretive mode and changes the visual language on the display. After scanning a space, the user can unfold a recommendation, identify a suggested spatial change, and toggle a visual preview.</p>
+          <p>The physical gesture keeps comparison continuous: instead of navigating separate applications, the user moves directly between viewpoints while looking at the same environment.</p>
+        </div>
+        <!-- Pair the ring-turning gesture with the corresponding on-screen transitions; include the exploded view beneath it. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus tangible interaction sequence forthcoming">
+          <span>Tangible interaction forthcoming</span>
+        </div>
+      </div>
+    </section>
 
-    <h2>Technical Prototype</h2>
-    <p class="overview-copy">The proof of concept connects an ESP32-CAM to a cloud-based multimodal model. A captured image is encoded and sent for text-based interpretation, while a separate interface prototype demonstrates mode switching and the presentation of recommendations. The architecture explores edge–cloud interaction but is not a validated environmental-analysis system.</p>
-    <div class="visual-grid">
-      <!-- Redraw as Capture → Encode → Send → Interpret → Display. -->
-      <div class="image-slot"><span>System flow</span></div>
-      <!-- Add a photograph of the electronics prototype, if one exists. -->
-      <div class="image-slot"><span>Physical prototype</span></div>
-      <!-- Use large crops for interior, building orientation, and ambient display. -->
-      <div class="image-slot"><span>Use scenarios</span></div>
-    </div>
+    <section class="portfolio-story">
+      <h2>HOW I MADE IT</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>The proof of concept connects an <strong>ESP32-CAM</strong> to a cloud-based multimodal model. A captured image is encoded and sent for text-based interpretation, while a separate interface prototype demonstrates mode switching and the presentation of recommendations.</p>
+          <p>This architecture was used to explore the interaction between a handheld object, visual capture, cloud interpretation, and an on-device display. It is a concept and technical prototype rather than a validated environmental-analysis system.</p>
+        </div>
+        <!-- Redraw as Capture → Encode → Interpret → Compare → Display, then add one electronics prototype photograph if available. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus system flow forthcoming">
+          <span>System flow forthcoming</span>
+        </div>
+      </div>
+    </section>
 
-    <h2>Scope and Reflection</h2>
-    <p class="overview-copy">Aetherus is speculative cultural interaction design. Feng Shui and astrology are interpretive belief systems; the device does not scientifically measure luck, energy, or environmental quality. A future iteration could focus less on producing an authoritative answer and more on supporting comparison, reflection, provenance, and conversation around different ways of understanding place.</p>
+    <section class="portfolio-story">
+      <h2>SCOPE &amp; REFLECTION</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>Aetherus treats Feng Shui and astrology as cultural and interpretive belief systems. The device does not scientifically measure luck, energy, or environmental quality, and its outputs should not be framed as objective spatial analysis.</p>
+          <p>A future iteration could make the sources and uncertainty behind each response more visible, and focus on supporting reflection and conversation instead of producing an authoritative recommendation.</p>
+        </div>
+        <!-- Add three use-scenario images: interior scan, building orientation, and ambient display. -->
+        <div class="portfolio-media-placeholder" role="img" aria-label="Aetherus use scenarios forthcoming">
+          <span>Use scenarios forthcoming</span>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer"><div class="shell footer-inner"><span>Last updated: September 4, 2026</span><span>Built with inspiration from <a href="https://github.com/xyjoey/PRISM" target="_blank" rel="noreferrer">PRISM</a> · MIT License</span></div></footer>
+  <footer class="footer"><div class="shell footer-inner"><span>Last updated: September 6, 2026</span><span>Built with inspiration from <a href="https://github.com/xyjoey/PRISM" target="_blank" rel="noreferrer">PRISM</a> · MIT License</span></div></footer>
 </body>
 </html>
