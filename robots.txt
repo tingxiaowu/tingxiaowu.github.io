@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /CV_Wu_Tingxiao.pdf
+Disallow: /research/super-resolution-e-skin/
+
+Sitemap: https://tingxiaowu.github.io/sitemap.xml
