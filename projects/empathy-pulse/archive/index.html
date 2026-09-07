@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Empathy Pulse — Tingxiao Wu</title>
+  <meta name="description" content="An exploratory wearable translating animal behavioral cues into multimodal human feedback.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260906-empathy-hero">
+  <script src="/assets/site.js"></script>
+</head>
+<body>
+  <header class="topbar"><nav class="shell nav" aria-label="Main navigation"><a class="brand" href="/">Tingxiao Wu</a><div class="navlinks"><a href="/">About</a><a href="/research/">Research</a><a href="/projects/" aria-current="page">Projects</a><a href="/CV_Wu_Tingxiao.pdf">CV</a><button class="theme-toggle" type="button" aria-label="Change theme">☾</button></div></nav></header>
+
+  <main class="portfolio-detail">
+    <a class="portfolio-back" href="/projects/"><span aria-hidden="true">←</span> Back to Projects</a>
+    <header class="portfolio-project-header">
+      <h1>Empathy Pulse</h1>
+      <p class="project-intro">Empathy Pulse is a hand-worn interface that explores how animal behavioral cues could be translated into a display, vibration, pneumatic pressure, and sound, helping the wearer consider how to respond.</p>
+      <p class="project-attribution">Project Lead: <strong>Tingxiao Wu</strong></p>
+      <p class="project-disciplines">Wearable Interaction · Embedded Hardware · Pneumatic Feedback</p>
+    </header>
+
+    <figure class="portfolio-project-hero">
+      <img src="/assets/images/empathy-pulse-hero.webp" width="882" height="496" alt="Empathy Pulse hand-worn prototype being used during an encounter with a cat">
+    </figure>
+
+    <section class="portfolio-story">
+      <h2>NOTICING CUES ACROSS SPECIES</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>Field observations across pet markets, streets, farms, zoos, and other animal settings, together with interviews across age groups, shaped the project. People described very different understandings of animal behavior, from recognizing distress in a familiar pet to misreading an animal's reluctance to interact.</p>
+          <p><strong>We asked how a wearable could draw attention to these cues at the moment of an encounter.</strong> The device is worn by the person, with a circular display on the hand and feedback components around the wrist.</p>
+        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/empathy-pulse-research.webp" alt="Empathy Pulse field observations, interviews, and research insights">
+          <figcaption>Field observations and interviews revealed how differently people interpret animal cues—and where misreading distress may cause harm.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>GIVING EACH FEEDBACK CHANNEL A ROLE</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>The proposed feedback map links five interpreted states—calm, happy, sad or in pain, uneasy or panicked, and angry—to different colors, vibration patterns, and airbag responses. The display gives the state a readable label and pairs it with a suggestion such as observe, avoid disturbing, or move away.</p>
+          <p>The design intention is to combine an immediate bodily cue with an explanation the wearer can inspect. A speaker adds an audio channel to the interaction concept. These mappings are design choices to explore, rather than a universal vocabulary for animal emotion.</p>
+        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/empathy-pulse-feedback-map.webp" alt="Proposed Empathy Pulse mapping from interpreted animal states to display, vibration, pneumatic feedback, and guidance">
+          <figcaption>Proposed feedback mapping. Each interpreted state combines a visual signal, a haptic intensity, and response guidance.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>BUILDING THE SENSING AND FEEDBACK HARDWARE</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>The hardware architecture pairs an <strong>ESP32-CAM with an OV2640 camera</strong> and an <strong>INMP441 microphone</strong> for image and sound input. An ESP32 links the sensing side to the output components: a circular RP2040-LCD-1.28 display, vibration motor, air pump and bladder, and a speaker with an I2S audio module.</p>
+          <p>We explored the output channels through separate display, motor, and pump tests, alongside the wearable assembly. This making process translated the feedback map into physical components that could be positioned on the hand and wrist.</p>
+        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/empathy-pulse-hardware.webp" alt="Empathy Pulse hardware architecture, component tests, recognition demonstration, and assembled hand-worn prototype">
+          <figcaption>The sensing-to-feedback architecture, component tests, and assembled hand-worn prototype.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>APPROACH OR OBSERVE?</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p><strong>Interactive mode</strong> is intended for close-range encounters with small animals, where the concept can draw on visual cues and sound. The screen combines an interpreted state with a response suggestion, while the wrist feedback draws attention to it.</p>
+          <p><strong>Educational mode</strong> addresses distant encounters, where the scenario relies on sound and contextual information. In the bird-habitat storyboard, the device recommends leaving the area to avoid disturbance. The two modes distinguish learning about an animal from being invited to approach it.</p>
+        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/empathy-pulse-interaction-modes.webp" alt="Empathy Pulse close-range interactive mode and distant educational mode storyboards">
+          <figcaption>Two concept scenarios: gentle interaction with a nearby small animal, and non-invasive observation from a distance.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="portfolio-story">
+      <h2>TESTING THE RECOGNITION CONCEPT</h2>
+      <div class="portfolio-story-grid">
+        <div class="portfolio-copy">
+          <p>We used <strong>Teachable Machine</strong> for initial recognition experiments and a browser-based p5.js demonstration to test image recognition with dog videos. These explorations sat alongside the hardware tests and the illustrated use scenarios.</p>
+          <p>The project demonstrates an approach to connecting recognition outputs with wearable feedback. It does not yet establish reliable animal-emotion classification or show which feedback channels help users most. A next iteration would test those questions separately, with animal-behavior expertise informing the interpretation of cues.</p>
+        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/empathy-pulse-recognition.webp" alt="Empathy Pulse recognition prototype workflow from training data to browser testing and example output">
+          <figcaption>An early technical-feasibility prototype, not a validated animal-emotion classification system.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-inner"><span>Last updated: September 6, 2026</span><span>Built with inspiration from <a href="https://github.com/xyjoey/PRISM" target="_blank" rel="noreferrer">PRISM</a> · MIT License</span></div></footer>
+</body>
+</html>
