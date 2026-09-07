@@ -28,6 +28,14 @@
   border: 0;
 }
 
+.portfolio-lossless-pair {
+  display: grid;
+  grid-template-columns: 571fr 570fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .portfolio-gallery-empathy .project-disciplines {
   color: #6256c8;
 }
