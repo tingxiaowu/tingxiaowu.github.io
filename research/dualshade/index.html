@@ -7,7 +7,7 @@
   <title>DualShade — Tingxiao Wu</title>
   <meta name="description" content="Dual-layer adaptive eyewear for glare and luminance control.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/site.css?v=20260906-video-story">
+  <link rel="stylesheet" href="/assets/site.css?v=20260908-site-refresh">
   <script src="/assets/site.js"></script>
 </head>
 <body>
@@ -44,7 +44,7 @@
           <p>By decoupling these responses, the system can reduce a bright hotspot without unnecessarily darkening the rest of the wearer's field of view.</p>
         </div>
         <figure class="portfolio-media">
-          <img src="/assets/images/dualshade-system.png" alt="DualShade sensing, control, and dual-layer lens system">
+          <img src="/assets/images/dualshade-separating-global-local.webp" width="1246" height="1080" alt="DualShade global dimming and localized masking layers">
           <figcaption>System architecture and the visual states produced by the two optical layers.</figcaption>
         </figure>
       </div>
@@ -57,10 +57,10 @@
           <p>A TSL2591 sensor measures global illuminance, while three BH1750 sensors sample directional light. An ESP32 combines these readings and controls the two optical layers.</p>
           <p>A confidence-gated policy is central to the design. When ambient light is low or the directional reading is uncertain, the eyewear returns to a transparent state so that the intervention does not create a new visibility risk.</p>
         </div>
-        <!-- Replace with a clean diagram: four sensors → ESP32 decision logic → Layer 1 and Layer 2. -->
-        <div class="portfolio-media-placeholder" role="img" aria-label="System flow diagram forthcoming">
-          <span>System flow diagram forthcoming</span>
-        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/dualshade-when-to-dim.webp" width="1024" height="768" alt="DualShade sensors, microcontroller, lens outputs, and integrated hardware">
+          <figcaption>Sensing inputs, ESP32 control, and the two optical outputs.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -71,10 +71,10 @@
           <p>The wearable prototype combines two optical layers with global and directional light sensing. Its operation depends on three connected decisions: how much to dim the scene, which of the three zones to mask, and when to release both interventions. This makes control behavior as important as the physical lens assembly.</p>
           <p>The final demonstration supports four states: transparent, global dimming, localized masking, and a combined response.</p>
         </div>
-        <!-- Add 3–4 photographs: early lens test, sensor placement, wiring integration, and final wearable assembly. -->
-        <div class="portfolio-media-placeholder" role="img" aria-label="Prototype development photographs forthcoming">
-          <span>Prototype development images forthcoming</span>
-        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/dualshade-integrating-prototype.webp" width="1208" height="768" alt="DualShade control states and transitions">
+          <figcaption>Control logic connecting transparent, global dimming, zonal masking, and mixed states.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -85,14 +85,12 @@
           <p>Bench testing measured an approximately <strong>390 ms</strong> response for Layer 1 and approximately <strong>217 ms</strong> activation and <strong>167 ms</strong> release for Layer 2. Layer 1 reduced measured light by approximately <strong>41%</strong>; using both layers produced approximately <strong>67%</strong> attenuation.</p>
           <p>In a nine-person readability task, the prototype received an average score of <strong>5.3/7</strong>. In a separate 21-person scenario survey, all participants wanted critical visual information to remain visible, and 15 indicated willingness to use the concept. These measurements characterize response timing, attenuation, and early user feedback. They do not establish on-road safety; the current localized response also uses three zones rather than continuous hotspot tracking.</p>
         </div>
-        <!-- Add one short looping clip showing transparent → global dimming → zonal masking → fail-safe transparency. -->
-        <div class="portfolio-media-placeholder portfolio-video-placeholder" role="img" aria-label="DualShade response video forthcoming">
-          <span>Response video forthcoming</span>
-        </div>
+        <figure class="portfolio-media">
+          <img src="/assets/images/dualshade-test-results.webp" width="1920" height="1080" alt="DualShade latency, attenuation, readability, and user-test results">
+          <figcaption>Bench measurements and early readability evaluation.</figcaption>
+        </figure>
       </div>
     </section>
   </main>
-
-  <footer class="footer"><div class="shell footer-inner"><span>Last updated: September 6, 2026</span><span>Built with inspiration from <a href="https://github.com/xyjoey/PRISM">PRISM</a> · MIT License</span></div></footer>
 </body>
 </html>

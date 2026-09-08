@@ -41,20 +41,48 @@
 }
 
 .portfolio-gallery-stage-emotion,
-.portfolio-case-emotion .portfolio-longform {
+.portfolio-case-emotion .portfolio-longform,
+.portfolio-gallery-hero-emotion {
   background: #252730;
 }
 
 .portfolio-gallery-stage-aetherus,
-.portfolio-gallery-aetherus .portfolio-longform {
+.portfolio-gallery-aetherus .portfolio-longform,
+.portfolio-gallery-hero-aetherus {
   background: #3b3b3b;
+}
+
+.portfolio-gallery-hero-empathy {
+  background: #191919;
+}
+
+.portfolio-gallery-hero-dark,
+.portfolio-gallery-hero-dark .portfolio-project-header h1,
+.portfolio-gallery-hero-dark .project-intro,
+.portfolio-gallery-hero-dark .project-attribution,
+.portfolio-gallery-hero-dark .project-disciplines,
+.portfolio-gallery-hero-dark .portfolio-back {
+  color: #fff;
+}
+
+.portfolio-gallery-hero-dark .portfolio-back:hover,
+.portfolio-gallery-hero-dark .portfolio-gallery-hero-media figcaption {
+  color: rgba(255, 255, 255, .72);
 }
 
 .portfolio-gallery-empathy .project-disciplines {
   color: #6256c8;
 }
 
+.portfolio-gallery-empathy .portfolio-gallery-hero-dark .project-disciplines {
+  color: #fff;
+}
+
 .portfolio-gallery-empathy .portfolio-longform {
+  width: min(2048px, calc(100% - 32px));
+}
+
+.portfolio-gallery-empathy .portfolio-gallery-hero-inner {
   width: min(2048px, calc(100% - 32px));
 }
 
@@ -69,6 +97,10 @@
 
   .portfolio-gallery-empathy .portfolio-longform {
     width: 100%;
+  }
+
+  .portfolio-gallery-empathy .portfolio-gallery-hero-inner {
+    width: calc(100% - 28px);
   }
 }
 

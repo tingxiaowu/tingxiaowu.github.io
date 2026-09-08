@@ -35,6 +35,27 @@
   background: #fff;
 }
 
+.portfolio-gallery-hero-beautwilight {
+  color: #111;
+  background: #fff;
+}
+
+.portfolio-gallery-hero-beautwilight .portfolio-project-header h1,
+.portfolio-gallery-hero-beautwilight .project-intro,
+.portfolio-gallery-hero-beautwilight .project-attribution,
+.portfolio-gallery-hero-beautwilight .project-disciplines,
+.portfolio-gallery-hero-beautwilight .portfolio-back {
+  color: #111;
+}
+
+.portfolio-gallery-hero-beautwilight .portfolio-back:hover {
+  color: #555;
+}
+
+.portfolio-gallery-hero-beautwilight .portfolio-gallery-hero-media figcaption {
+  color: #666;
+}
+
 @media (max-width: 640px) {
   .beautwilight-intro {
     padding-bottom: 48px;
