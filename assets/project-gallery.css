@@ -28,12 +28,21 @@
   border: 0;
 }
 
-.portfolio-lossless-pair {
-  display: grid;
-  grid-template-columns: 571fr 570fr;
-  gap: 0;
+.portfolio-gallery-stage,
+.portfolio-seamless-stack {
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.portfolio-gallery-stage-empathy,
+.portfolio-gallery-empathy .portfolio-longform {
+  background: #191919;
+}
+
+.portfolio-gallery-stage-emotion,
+.portfolio-case-emotion .portfolio-longform {
+  background: #252730;
 }
 
 .portfolio-gallery-empathy .project-disciplines {
@@ -41,13 +50,7 @@
 }
 
 .portfolio-gallery-empathy .portfolio-longform {
-  width: min(1141px, 100%);
-}
-
-@media (min-width: 1601px) {
-  .portfolio-longform {
-    box-shadow: 0 0 0 1px rgba(17, 17, 17, .04);
-  }
+  width: min(2048px, calc(100% - 32px));
 }
 
 @media (max-width: 640px) {
@@ -58,8 +61,20 @@
   .portfolio-longform {
     width: 100%;
   }
+
+  .portfolio-gallery-empathy .portfolio-longform {
+    width: 100%;
+  }
 }
 
 [data-theme="dark"] .portfolio-longform {
   background: #fff;
+}
+
+[data-theme="dark"] .portfolio-gallery-empathy .portfolio-longform {
+  background: #191919;
+}
+
+[data-theme="dark"] .portfolio-case-emotion .portfolio-longform {
+  background: #252730;
 }

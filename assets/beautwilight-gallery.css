@@ -28,10 +28,11 @@
   border: 0;
 }
 
-@media (min-width: 1601px) {
-  .beautwilight-longform {
-    box-shadow: 0 0 0 1px rgba(17, 17, 17, .04);
-  }
+.portfolio-gallery-stage-beautwilight {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
 }
 
 @media (max-width: 640px) {
