@@ -40,6 +40,10 @@
   color: #6256c8;
 }
 
+.portfolio-gallery-empathy .portfolio-longform {
+  width: min(1141px, 100%);
+}
+
 @media (min-width: 1601px) {
   .portfolio-longform {
     box-shadow: 0 0 0 1px rgba(17, 17, 17, .04);
