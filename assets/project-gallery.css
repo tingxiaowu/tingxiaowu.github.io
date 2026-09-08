@@ -45,6 +45,11 @@
   background: #252730;
 }
 
+.portfolio-gallery-stage-aetherus,
+.portfolio-gallery-aetherus .portfolio-longform {
+  background: #3b3b3b;
+}
+
 .portfolio-gallery-empathy .project-disciplines {
   color: #6256c8;
 }
@@ -77,4 +82,8 @@
 
 [data-theme="dark"] .portfolio-case-emotion .portfolio-longform {
   background: #252730;
+}
+
+[data-theme="dark"] .portfolio-gallery-aetherus .portfolio-longform {
+  background: #3b3b3b;
 }
