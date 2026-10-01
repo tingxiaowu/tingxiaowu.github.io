@@ -56,7 +56,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 ))}
               </div>
             </section>
-            {project.status !== "Preprint" && (
+            {project.status === "Accepted" ? (
+              <p className="review-note"><strong>Public preview.</strong> This manuscript has been accepted for publication. Additional materials remain withheld pending publication and collaborator approval.</p>
+            ) : project.status !== "Preprint" && (
               <p className="review-note"><strong>Public preview.</strong> This project is currently under review or evaluation. Results are provisional, and selected technical details and figures are withheld until publication.</p>
             )}
           </div>
